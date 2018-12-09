@@ -1,12 +1,11 @@
 const express=require('express');
 const hbs = require('hbs');
 const fs=require('fs');
-<<<<<<< HEAD
 const port=process.env.PORT || 3000;
 
 var app=express();
 
-hbs.registerPartials(__dirname+'/views/partials')
+hbs.registerPartials(__dirname+'/views/partials');
 
 hbs.registerHelper('getCurrentYear',()=>{
   return new Date().getFullYear()
